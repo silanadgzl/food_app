@@ -1,0 +1,51 @@
+<!-- nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/anasayfa">
+
+    <fragment
+        android:id="@+id/anasayfa"
+        android:name="com.example.xxxxxxxxxxx.presentation.fragment.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" />
+    <fragment
+        android:id="@+id/favoriler"
+        android:name="com.example.xxxxxxxxxxx.presentation.fragment.FavorilerFragment"
+        android:label="fragment_favoriler"
+        tools:layout="@layout/fragment_favoriler" />
+    <fragment
+        android:id="@+id/sepet"
+        android:name="com.example.xxxxxxxxxxx.presentation.fragment.SepetFragment"
+        android:label="fragment_sepet"
+        tools:layout="@layout/fragment_sepet" >
+        <action
+            android:id="@+id/action_sepet_to_siparisAlindiFragment"
+            app:destination="@id/siparisAlindiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profil"
+        android:name="com.example.xxxxxxxxxxx.presentation.fragment.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.xxxxxxxxxxx.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/detayFragment"
+        android:name="com.example.xxxxxxxxxxx.presentation.fragment.DetayFragment"
+        android:label="fragment_detay"
+        tools:layout="@layout/fragment_detay" >
+        <action
+            android:id="@+id/detaydansepetegecis"
+            app:destination="@id/sepet" />
+    </fragment>
+    <fragment
+        android:id="@+id/siparisAlindiFragment"
+        android:name="com.example.xxxxxxxxxxx.presentation.fragment.SiparisAlindiFragment"
+        android:label="fragment_siparis_alindi"
+        tools:layout="@layout/fragment_siparis_alindi" />
+</navigation>

@@ -1,0 +1,19 @@
+<!-- bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/anasayfa"
+        android:icon="@drawable/home"
+        android:title="Ana Sayfa" />
+    <item
+        android:id="@+id/favoriler"
+        android:icon="@drawable/favorite"
+        android:title="Favoriler" />
+    <item
+        android:id="@+id/sepet"
+        android:icon="@drawable/shop"
+        android:title="Sepetim" />
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/person"
+        android:title="Hesabım" />
+</menu>
